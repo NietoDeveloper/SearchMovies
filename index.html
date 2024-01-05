@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Buscador Peliculas JS-API</title>
+    
+</head>
+
+<header>
+
+    <div class="welcome">
+        <h1>Search Movies</h1>
+    </div>
+        
+</header>
+
+<body>
+
+    <div class="Search"> 
+        <div>
+            <button class="btn_favoritos">Mostrar Favoritos</button>
+        </div>
+        <div class="boton_mostrar"> 
+                <button class="btn_mostrar">Mostrar Peliculas</button>
+        </div>
+        
+        <div class="buscador">
+        <input type="text" id="inputBuscar" placeholder="Buscar película por nombre">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+    </div>
+
+    <div class="listFav">
+        <h2>Tus peliculas favoritas son: </h2>
+        <ul class="listaul">
+            <li></li>
+        </ul>
+    </div>
+    <div id="pelicula">
+        <img src="" alt="">
+    </div>
+
+    <div class="ventana_modal">
+        <div class="contenido_ventanaModal">
+            <div class="top_modal">
+            <span class="corazon_favorito">&hearts;</span>
+            <span class="close">&times;</span>
+            </div>
+            <div class="img_modal">
+            <img id="imagen_ventanaModal" src="" alt="">
+            </div>
+            <div class="text_modal">
+           <h3 id="titulo_ventanaModal"></h3>
+           <p id="descripcion_ventaModal"></p>
+           <p id="año_ventanaModal"></p>
+           </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer section">
+        <div class="shapeX shape__big"></div>
+        <div class="shapeX shape__small"></div>
+    
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/" class="footer__logo">
+                    <i class=""></i>
+                    NietoSoftwareDeveloper
+                </a>
+                <p class="footer__description">
+                    Full Stack JS Developer
+                </p>
+            </div>
+
+            <div class="footer__content">
+    
+                <h3 class="footer__title"></h3>
+    
+                <ul class="footer__links">
+                    <li>
+                        <a target="_blank" href="https://www.freecodecamp.org/certification/ManuelNieto/responsive-web-design" class="footer__links">HTML</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freecodecamp.org/certification/ManuelNieto/responsive-web-design" class="footer__links">CSS</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freecodecamp.org/certification/ManuelNieto/javascript-algorithms-and-data-structures" class="footer__links">Java Script</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freecodecamp.org/certification/ManuelNieto/javascript-algorithms-and-data-structures" class="footer__links">React</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freecodecamp.org/certification/ManuelNieto/javascript-algorithms-and-data-structures" class="footer__links">Node JS</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__content">
+                <h3 class="footer__title">Go to BriefCase</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/proyects.html" class="footer__links">Proyects</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/formation.html" class="footer__links">Formation</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/aboutmanuel.html" class="footer__links">About</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/contact.html" class="footer__links">Contact</a>
+                    </li>
+    
+                </ul>
+            </div>
+    
+            <div class="footer__content">
+    
+                <ul class="footer__social">
+                    <a target="_blank" href="https://github.com/NietoDeveloper" class="footer__social-link">
+                        <i class="fa fa-github" style="font-size:60px"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        
+        <span class="footer__copy">
+            &#169 <a target="_blank" href="https://nietodeveloper.github.io/Briefcase/index.html" class="footer__dev-link">Created by Manuel Nieto</a><p>®Copyrights2024</p><p id="date"></p>
+        </span>
+
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+
+    </footer>
+    
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+    
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scrollrevealAnimation.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="pouchdb-8.0.1.js" ></script>
+    <script src="scripts/app.js" ></script>
+
+</body>
+
+</html>
