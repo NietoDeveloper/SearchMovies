@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Buscador Peliculas JS-API</title>
+    <title>Search Movies</title>
     
 </head>
 
@@ -28,7 +28,7 @@
 
 <body>
     <div class="card">
-        <div class="div-1">
+        <div class="div-1" data-tilt>
             <div class="Search"> 
                 <div>
                     <button class="btn_favoritos">Mostrar Favoritos</button>
@@ -45,16 +45,19 @@
         </div>
     </div>
 
-        <div class="listFav">
-            <h2>Tus peliculas favoritas son: </h2>
-            <ul class="listaul">
-                <li></li>
-            </ul>
+    <div class="card">
+        <div class="div-1" data-tilt>
+            <div class="listFav">
+                <h2>Tus peliculas favoritas son: </h2>
+                <ul class="listaul">
+                    <li></li>
+                </ul>
+            </div>
+            <div id="pelicula">
+                <img src="" alt="">
+            </div>
         </div>
-        <div id="pelicula">
-            <img src="" alt="">
-        </div>
-    
+    </div>
         <div class="ventana_modal">
             <div class="contenido_ventanaModal">
                 <div class="top_modal">
@@ -159,7 +162,7 @@
     <script src="assets/js/main.js"></script>
     <script src="pouchdb-8.0.1.js" ></script>
     <script src="scripts/app.js" ></script>
-
+    <script src="assets/js/vanilla-tilt.js"></script> 
 </body>
 
 </html>
