@@ -1,10 +1,10 @@
 .welcome {
     text-align: center;
-    color: blue;
+    color: rgb(248, 73, 4);
     margin-top: 20px;
 }
 .welcome h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
     @media screen and (min-width: 720px) {
         .welcome h1 {
