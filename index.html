@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="assets/css/skeleton.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -26,47 +27,50 @@
 </header>
 
 <body>
-
-    <div class="Search"> 
-        <div>
-            <button class="btn_favoritos">Mostrar Favoritos</button>
-        </div>
-        <div class="boton_mostrar"> 
-                <button class="btn_mostrar">Mostrar Peliculas</button>
-        </div>
-        
-        <div class="buscador">
-        <input type="text" id="inputBuscar" placeholder="Buscar película por nombre">
-            <button id="btnBuscar">Buscar</button>
-        </div>
-    </div>
-
-    <div class="listFav">
-        <h2>Tus peliculas favoritas son: </h2>
-        <ul class="listaul">
-            <li></li>
-        </ul>
-    </div>
-    <div id="pelicula">
-        <img src="" alt="">
-    </div>
-
-    <div class="ventana_modal">
-        <div class="contenido_ventanaModal">
-            <div class="top_modal">
-            <span class="corazon_favorito">&hearts;</span>
-            <span class="close">&times;</span>
+    <div class="card">
+        <div class="div-1">
+            <div class="Search"> 
+                <div>
+                    <button class="btn_favoritos">Mostrar Favoritos</button>
+                </div>
+                <div class="boton_mostrar"> 
+                        <button class="btn_mostrar">Mostrar Peliculas</button>
+                </div>
+                
+                <div class="buscador">
+                <input type="text" id="inputBuscar" placeholder="Buscar película por nombre">
+                    <button id="btnBuscar">Buscar</button>
+                </div>
             </div>
-            <div class="img_modal">
-            <img id="imagen_ventanaModal" src="" alt="">
-            </div>
-            <div class="text_modal">
-           <h3 id="titulo_ventanaModal"></h3>
-           <p id="descripcion_ventaModal"></p>
-           <p id="año_ventanaModal"></p>
-           </div>
         </div>
     </div>
+
+        <div class="listFav">
+            <h2>Tus peliculas favoritas son: </h2>
+            <ul class="listaul">
+                <li></li>
+            </ul>
+        </div>
+        <div id="pelicula">
+            <img src="" alt="">
+        </div>
+    
+        <div class="ventana_modal">
+            <div class="contenido_ventanaModal">
+                <div class="top_modal">
+                <span class="corazon_favorito">&hearts;</span>
+                <span class="close">&times;</span>
+                </div>
+                <div class="img_modal">
+                <img id="imagen_ventanaModal" src="" alt="">
+                </div>
+                <div class="text_modal">
+               <h3 id="titulo_ventanaModal"></h3>
+               <p id="descripcion_ventaModal"></p>
+               <p id="año_ventanaModal"></p>
+               </div>
+            </div>
+        </div>
     
 
     <footer class="footer section">

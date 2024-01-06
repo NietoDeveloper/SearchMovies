@@ -1,0 +1,153 @@
+.welcome {
+    text-align: center;
+    color: blue;
+    margin-top: 20px;
+}
+.welcome h1 {
+    font-size: 30px;
+}
+    @media screen and (min-width: 720px) {
+        .welcome h1 {
+        font-size: 45px;
+        }
+    }
+.card {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.card .div-1 h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+    @media screen and (min-width: 720px) {
+        .card .div-1 h2 {
+            font-size: 28px;
+        }
+    }
+  
+.div-1 {
+    border: 1px solid rgba(61, 12, 209, 0.411);
+    border-radius: 16px;
+    box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
+    backdrop-filter: blur(2px);
+    width: 310px;
+    height: 550px;
+    margin-top: 10px;
+    align-self: center;
+    padding: auto;
+}
+    @media screen and (min-width: 720px) {
+        .div-1 {
+            width: 420px;
+            height: 570px;
+        }
+    }
+
+.send{
+    cursor: pointer;
+    background-color: blue;
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.0010s;
+}
+    @media screen and (min-width: 720px) {
+        .send {
+            width: 220px;
+            height: 60px;
+        }
+    }
+.send h3 {
+    font-size: 18px;
+    font-family: 'Exo', sans-serif;
+}
+
+.send:hover{
+  
+    background: rgb(153, 255, 0);
+    box-shadow: 0 0 90px rgb(152, 253, 0),
+                0 0 110px rgb(155, 252, 10),
+                0 0 140px rgb(152, 253, 1);
+                transition-delay: 0.7s;
+}
+    @media screen and (min-width: 720px) {
+            .send:hover {
+                box-shadow: 0 0 120px rgb(163, 255, 24),
+                0 0 150px rgb(155, 252, 10),
+                0 0 190px rgb(152, 253, 1);
+
+            }
+        }
+.send:hover h3 {
+    color: rgb(255, 123, 0);
+    font-size: 25px;
+}
+
+.send span{
+    position: absolute;
+    display: block;
+}
+
+.send span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, transparent, greenyellow);
+}
+
+    @media screen and (min-width: 720px) {
+        .send span:nth-child(1) {
+            height: 60px;
+        }
+    }
+.send:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.send span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, greenyellow);
+}
+.send:hover span:nth-child(2){
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.15s;
+}
+.send span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(270deg, transparent, greenyellow);
+}
+.send:hover span:nth-child(3){
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.send span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(270deg, transparent, greenyellow);
+}
+.send:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
