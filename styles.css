@@ -10,7 +10,6 @@
   --z-fixed: 100;
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -135,7 +134,7 @@ a {
   flex-direction: column;
   row-gap: .7rem;
   color: rgb(188, 255, 4);
-  font-size: 17px;
+  font-size: 18px;
 }
 .footer__links:hover{
   color: rgb(206, 6, 6);
@@ -165,7 +164,7 @@ font-size: 14px;
 }
 .footer__dev-link{
   color: greenyellow;
-  font-size: 24px;
+  font-size: 20px;
 }
 .footer__copy,
 .footer__dev-link:hover{
