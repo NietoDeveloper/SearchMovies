@@ -20,16 +20,6 @@
     align-items: center;
     justify-content: center;
 }
-.card .div-1 h2 {
-    font-size: 21px;
-    margin-bottom: 15px;
-    margin-top: 35px;
-}
-    @media screen and (min-width: 720px) {
-        .card .div-1 h2 {
-            font-size: 28px;
-        }
-    }
   
 .div-1 {
     border: 1px solid rgba(61, 12, 209, 0.411);
@@ -52,8 +42,8 @@
 .btn_favoritos{
     cursor: pointer;
     background-color: blue;
-    width: 160px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     margin-top: 20px;
     position: relative;
     display: inline-block;
@@ -64,7 +54,7 @@
 }
     @media screen and (min-width: 720px) {
         .btn_favoritos {
-            width: 220px;
+            width: 260px;
             height: 60px;
         }
     }
@@ -91,7 +81,7 @@
         }
 .btn_favoritos:hover h3 {
     color: rgb(255, 123, 0);
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .btn_favoritos span{
