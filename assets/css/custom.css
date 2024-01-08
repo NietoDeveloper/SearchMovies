@@ -7,11 +7,17 @@
     font: 600;
     font-size: 35px;
 }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 620px) {
         .welcome h1 {
-        font-size: 45px;
+        font-size: 48px;
         }
     }
+    @media screen and (min-width: 920px) {
+        .welcome h1 {
+        font-size: 54px;
+        }
+    }
+
 .card {
     text-align: center;
     display: flex;
@@ -39,7 +45,7 @@
         }
     }
 
-.btn_favoritos{
+.btn_favoritos {
     cursor: pointer;
     background-color: blue;
     width: 200px;
@@ -52,7 +58,7 @@
     overflow: hidden;
     transition: 0.0010s;
 }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 620px) {
         .btn_favoritos {
             width: 260px;
             height: 60px;
@@ -61,6 +67,11 @@
 .btn_favoritos h3 {
     font-size: 15px;
     font-family: 'Exo', sans-serif;
+}
+@media screen and (min-width: 620px) {
+    .btn_favoritos h3 {
+        font-size: 20px;
+    }
 }
 
 .btn_favoritos:hover{
@@ -82,6 +93,11 @@
 .btn_favoritos:hover h3 {
     color: rgb(255, 123, 0);
     font-size: 18px;
+}
+@media screen and (min-width: 620px) {
+    .btn_favoritos:hover h3 {
+    font-size: 24px;
+    }
 }
 
 .btn_favoritos span{
@@ -142,6 +158,7 @@
     transition: 1s;
     transition-delay: 0.75s;
 }
+
 
 .btn_mostrar {
     cursor: pointer;
@@ -156,18 +173,23 @@
     overflow: hidden;
     transition: 0.0010s;
 }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 620px) {
         .btn_mostrar {
             width: 260px;
             height: 60px;
         }
     }
-.btn_favoritos h3 {
+.btn_mostrar h3 {
     font-size: 15px;
     font-family: 'Exo', sans-serif;
 }
+@media screen and (min-width: 620px) {
+    .btn_mostrar h3 {
+        font-size: 20px;
+    }
+}
 
-.btn_favoritos:hover{
+.btn_mostrar:hover{
   
     background: rgb(153, 255, 0);
     box-shadow: 0 0 90px rgb(152, 253, 0),
@@ -176,24 +198,29 @@
                 transition-delay: 0.7s;
 }
     @media screen and (min-width: 720px) {
-            .btn_favoritos:hover {
+            .btn_mostrar:hover {
                 box-shadow: 0 0 120px rgb(163, 255, 24),
                 0 0 150px rgb(155, 252, 10),
                 0 0 190px rgb(152, 253, 1);
 
             }
         }
-.btn_favoritos:hover h3 {
+.btn_mostrar:hover h3 {
     color: rgb(255, 123, 0);
     font-size: 18px;
 }
+@media screen and (min-width: 620px) {
+    .btn_mostrar:hover h3 {
+    font-size: 24px;
+    }
+}
 
-.btn_favoritos span{
+.btn_mostrar span{
     position: absolute;
     display: block;
 }
 
-.btn_favoritos span:nth-child(1){
+.btn_mostrar span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
@@ -202,47 +229,48 @@
 }
 
     @media screen and (min-width: 720px) {
-        .btn_favoritos span:nth-child(1) {
+        .btn_mostrar span:nth-child(1) {
             height: 60px;
         }
     }
-.btn_favoritos:hover span:nth-child(1){
+.btn_mostrar:hover span:nth-child(1){
     left: 100%;
     transition: 1s;
 }
-.btn_favoritos span:nth-child(2){
+.btn_mostrar span:nth-child(2){
     top: -100%;
     right: 0;
     width: 50px;
     height: 100%;
     background: linear-gradient(180deg, transparent, greenyellow);
 }
-.btn_favoritos:hover span:nth-child(2){
+.btn_mostrar:hover span:nth-child(2){
     left: 100%;
     transition: 1s;
     transition-delay: 0.15s;
 }
-.btn_favoritos span:nth-child(3){
+.btn_mostrar span:nth-child(3){
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 50px;
     background: linear-gradient(270deg, transparent, greenyellow);
 }
-.btn_favoritos:hover span:nth-child(3){
+.btn_mostrar:hover span:nth-child(3){
     left: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
-.btn_favoritos span:nth-child(4){
+.btn_mostrar span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 50px;
     height: 100%;
     background: linear-gradient(270deg, transparent, greenyellow);
 }
-.btn_favoritos:hover span:nth-child(4){
+.btn_mostrar:hover span:nth-child(4){
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
 }
+
