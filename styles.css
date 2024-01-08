@@ -150,7 +150,7 @@ a {
 }
 .footer__social-link{
   font-size: 50px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 .footer__copy{
   display: block;
@@ -160,11 +160,11 @@ a {
 }
 .footer__copy p {
 color: greenyellow;
-font-size: 14px;
+font-size: 15px;
 }
 .footer__dev-link{
   color: greenyellow;
-  font-size: 20px;
+  font-size: 21px;
 }
 .footer__copy,
 .footer__dev-link:hover{
