@@ -300,8 +300,11 @@
 main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
+    padding: 0 4px;
     
   }
   
@@ -386,54 +389,7 @@ main {
     padding: 20px;
 }
 
-.corazon_favorito{
 
-    font-size: 40px;
-    cursor: pointer;
-    float:left ;
-}
-.top_modal{
-    padding:20px ;
-}
-.corazon_favorito:hover,
-.corazon_favorito:focus{
-    cursor: pointer;
-    color: red;
-    border: 1px black;
-    transform: scale(1.5)
-}
-
-
-.close {
-  color: rgb(128, 128, 128);
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover{
-    color: rgb(192, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-    transform: scale(1.5)
-}
-.close:focus {
-  color: rgb(192, 0, 0);
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.5)
-}
-
-.tachito {
-    color: rgb(128, 128, 128);
-    float: right;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-
-
-}
 
 .tachito:hover,
 .tachito:focus{
