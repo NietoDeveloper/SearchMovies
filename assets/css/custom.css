@@ -173,10 +173,10 @@
   
   #pelicula {
     margin-top: 30px;
-	display: flex;/*Con esta propiedad se centra en el flujo del contenido*/
+	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;/*Esta propiedad hace que los elementos se desplienguen en varias filas o columnas dependiendo la dirección que se asigne.*/
-	justify-content: center;/*Todo el contenido se justifica hacia el centro (en este caso)*/
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	padding: 0 4px;
   }
@@ -186,8 +186,7 @@
     cursor: pointer;
     width: 100%;
 	height: 300px;
-	object-fit: cover;/*Esta propieddad hace que las imágenes se ajusten al tamaño dado en el
-	contenedor manteniendo su relación de aspecto.*/
+	object-fit: cover;
 	margin-top: 8px;
 	padding: 0 4px;
 	border-radius: 10px;

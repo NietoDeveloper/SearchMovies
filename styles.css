@@ -75,7 +75,7 @@ a {
 /*=============== FOOTER ===============*/
 
 .footer{
-  margin-top: 100px;
+  margin-top: 70px;
   position: relative;
   overflow: hidden;
 }
@@ -133,20 +133,20 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: .7rem;
-  color: rgb(188, 255, 4);
+  color: rgb(248, 73, 4);
   font-size: 18px;
 }
 .footer__links:hover{
-  color: rgb(206, 6, 6);
+  color: rgb(188, 255, 4);
 }
 .footer__link,
 .footer__social-link{
-  color: rgb(188, 255, 4);
+  color: rgb(248, 73, 4);
   transition: .3s;
 }
 .footer__link:hover,
 .footer__social-link:hover{
-  color: rgb(206, 6, 6);
+  color: rgb(188, 255, 4);
 }
 .footer__social-link{
   font-size: 50px;
@@ -159,16 +159,16 @@ a {
   font-size: 17px;
 }
 .footer__copy p {
-color: greenyellow;
+color: rgb(248, 73, 4);
 font-size: 15px;
 }
 .footer__dev-link{
-  color: greenyellow;
+  color: rgb(248, 73, 4);
   font-size: 21px;
 }
 .footer__copy,
 .footer__dev-link:hover{
-  color: red;
+  color: rgb(188, 255, 4);
   transition: .3s;
   animation: a 3s infinite; 
 }
