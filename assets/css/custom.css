@@ -291,22 +291,6 @@
     color: rgb(253, 66, 19);
     font-size: 25px;
 }
-
-
-
-/*Aca empieza el main donde aparecen las peliculas*/
-
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    padding: 0 4px;
-    
-  }
   
   #pelicula {
     margin-top: 50px;
@@ -322,7 +306,7 @@ main {
  
 .cuadro_pelicula img{ 
     
-    width: 150px;
+    width: 160px;
     border-radius: 10px;
     border: outset rgba(175, 255, 255, 0.17) 2px;
     box-shadow: rgba(175, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(175, 255, 255, 0.17) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(175, 255, 255, 0.17) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(175, 255, 255, 0.17) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(175, 255, 255, 0.17) 0px 32px 16px;
