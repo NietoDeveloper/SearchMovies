@@ -4,16 +4,16 @@
     margin-top: 25px;
 }
 .welcome h1 {
-    font: 600;
+    font-size: 50px;
 }
     @media screen and (min-width: 620px) {
         .welcome h1 {
-        font-size: 48px;
+        font-size: 70px;
         }
     }
     @media screen and (min-width: 920px) {
         .welcome h1 {
-        font-size: 54px;
+        font-size: 80px;
         }
     }
 
@@ -32,7 +32,7 @@
     box-shadow:0 4px 30px rgba(0, 0,0, 0.1);
     backdrop-filter: blur(5px);
     width: 320px;
-    height: 340px;
+    height: 250px;
     margin-top: 60px;
     align-self: center;
     padding: auto;
@@ -40,129 +40,16 @@
     @media screen and (min-width: 620px) {
         .div-1 {
             width: 520px;
-            height: 350px;
+            height: 310px;
         }
     }
     @media screen and (min-width: 920px) {
         .div-1 {
             width: 620px;
-            height: 360px;
+            height: 350px;
         }
     }
 
-.btn_favoritos {
-    cursor: pointer;
-    background-color: blue;
-    width: 200px;
-    height: 50px;
-    margin-top: 40px;
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.0010s;
-}
-    @media screen and (min-width: 620px) {
-        .btn_favoritos {
-            width: 260px;
-            height: 60px;
-        }
-    }
-.btn_favoritos h3 {
-    font-size: 15px;
-    font-family: 'Exo', sans-serif;
-}
-@media screen and (min-width: 620px) {
-    .btn_favoritos h3 {
-        font-size: 20px;
-    }
-}
-
-.btn_favoritos:hover{
-  
-    background: rgb(153, 255, 0);
-    box-shadow: 0 0 90px rgb(152, 253, 0),
-                0 0 110px rgb(155, 252, 10),
-                0 0 140px rgb(152, 253, 1);
-                transition-delay: 0.7s;
-}
-    @media screen and (min-width: 720px) {
-            .btn_favoritos:hover {
-                box-shadow: 0 0 120px rgb(163, 255, 24),
-                0 0 150px rgb(155, 252, 10),
-                0 0 190px rgb(152, 253, 1);
-
-            }
-        }
-.btn_favoritos:hover h3 {
-    color: rgb(255, 123, 0);
-    font-size: 18px;
-}
-@media screen and (min-width: 620px) {
-    .btn_favoritos:hover h3 {
-    font-size: 24px;
-    }
-}
-
-.btn_favoritos span{
-    position: absolute;
-    display: block;
-}
-
-.btn_favoritos span:nth-child(1){
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(90deg, transparent, greenyellow);
-}
-
-    @media screen and (min-width: 720px) {
-        .btn_favoritos span:nth-child(1) {
-            height: 60px;
-        }
-    }
-.btn_favoritos:hover span:nth-child(1){
-    left: 100%;
-    transition: 1s;
-}
-.btn_favoritos span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 50px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, greenyellow);
-}
-.btn_favoritos:hover span:nth-child(2){
-    left: 100%;
-    transition: 1s;
-    transition-delay: 0.15s;
-}
-.btn_favoritos span:nth-child(3){
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(270deg, transparent, greenyellow);
-}
-.btn_favoritos:hover span:nth-child(3){
-    left: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-.btn_favoritos span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, transparent, greenyellow);
-}
-.btn_favoritos:hover span:nth-child(4){
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.55s;
-}
 
 
 .btn_mostrar {
@@ -170,7 +57,7 @@
     background-color: blue;
     width: 200px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 60px;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -281,105 +168,32 @@
 
 
 .buscador {
-    margin-top: 70px;
-}
-
-
-.listFav h2 {
-    text-align: center;
     margin-top: 50px;
-    color: rgb(253, 66, 19);
-    font-size: 25px;
 }
   
   #pelicula {
-    margin-top: 50px;
-    margin-left: 60px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 100%;
-    justify-content: center;
+    margin-top: 30px;
+	display: flex;/*Con esta propiedad se centra en el flujo del contenido*/
+	flex-direction: row;
+	flex-wrap: wrap;/*Esta propiedad hace que los elementos se desplienguen en varias filas o columnas dependiendo la dirección que se asigne.*/
+	justify-content: center;/*Todo el contenido se justifica hacia el centro (en este caso)*/
+	align-items: center;
+	padding: 0 4px;
   }
 
  
 .cuadro_pelicula img{ 
-    
-    width: 160px;
-    border-radius: 10px;
-    border: outset rgba(175, 255, 255, 0.17) 2px;
-    box-shadow: rgba(175, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(175, 255, 255, 0.17) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(175, 255, 255, 0.17) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(175, 255, 255, 0.17) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(175, 255, 255, 0.17) 0px 32px 16px;
-}
+    cursor: pointer;
+    width: 100%;
+	height: 300px;
+	object-fit: cover;/*Esta propieddad hace que las imágenes se ajusten al tamaño dado en el
+	contenedor manteniendo su relación de aspecto.*/
+	margin-top: 8px;
+	padding: 0 4px;
+	border-radius: 10px;
 
-
-
-/*Ventana modal al hacer click en una pelicula*/
-
-
-.ventana_modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow: auto;
 }
 
 
 
 
-.contenido_ventanaModal {
-  
-  margin: 10% auto;
-  
-  border: 1px solid #888;
-  
-  max-width: 500px;
-  border-radius: 20px;
-  background-color: #1f021c;
-  color: white;
-  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
-  font-size: 18px;
-  
-  
-}
-.contenido_ventanaModal h3 {
-    text-align: center;
-    text-decoration: underline
-}
-.contenido_ventanaModal h3 p {
-    font-size: 16px;
-}
-
-.img_modal {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-#imagen_ventanaModal{
-
-    border-radius: 20px;
-    
-    
-   
-    
-}
-.text_modal{
-    padding: 20px;
-}
-
-
-
-.tachito:hover,
-.tachito:focus{
-
-    color: rgb(192, 0, 0);
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.5)
-}
