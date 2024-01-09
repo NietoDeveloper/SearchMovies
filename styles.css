@@ -112,7 +112,7 @@ a {
   color: blue;
 }
 .footer__logo:hover{
-  color: red;
+  color: rgb(248, 73, 4);
 }
 .footer__description {
   color: blue;
