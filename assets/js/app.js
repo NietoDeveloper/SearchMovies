@@ -1,6 +1,5 @@
 const peliculaDiv = document.getElementById('pelicula');
 const btnMostrar = document.querySelector('.btn_mostrar');
-let iconoFav = document.querySelector('.corazon_favorito');
 const btnFav = document.querySelector('.btn_favoritos');
 const listaFav = document.querySelector('.listFav');
 const listaul = document.querySelector('.listaul');
@@ -225,104 +224,5 @@ const btnBuscar = document.getElementById('btnBuscar');
     .catch(error => console.error(error));
     
 });
-
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-//click en corazon de me gusta y que se guarde
-
-
-
-      iconoFav.addEventListener('click', ()=>{
-        
-          modal.style.display = 'none';
-        
-        const fecha = new Date().toISOString();
-
-        const listaFav = {
-            _id: fecha,
-            NombrePeli : iconoFav.id,
-          }
-               
-          db.put(listaFav).then(() => {
-              console.log('Película guardada en favoritos');
-            })
-            .catch(error => {
-              console.error(error);
-            });
-
-
-           
-            modal.style.display = 'none';
-
-        
-      });
-
-
-
-    
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    //Cargar peliculas guardadas
-
-    btnFav.addEventListener('click', () => {
-      
-      db.allDocs({ include_docs: true })
-        .then(result => {
-          console.log(result)
-          const peliculasFavoritas = result.rows;
-          
-          peliculaDiv.innerHTML = '';
-    
-          peliculasFavoritas.forEach(pelicula => {
-            
-            const idPeli = pelicula.doc.NombrePeli;
-            
-            // const año = pelicula.release_date.slice(0, 4);
-            const imagenURL = 'https://image.tmdb.org/t/p/w500' + idPeli;
-            
-    
-            // Crea los elementos HTML para mostrar la película
-    
-            const peliculaItem = document.createElement('div');
-            peliculaItem.classList.add('cuadro_pelicula');
-    
-            const imagen = document.createElement('img');
-            //creo el div contenedor del boton borrar
-            const cuadroBton = document.createElement('div');
-            cuadroBton.classList.add('cuadroBton');
-            
-            const botonBorrar = document.createElement('button');
-            botonBorrar.classList.add('boton_borrar_fav');
-            const idBoton = idPeli;
-
-            botonBorrar.setAttribute('data-doc-id', idBoton); // le agrego el atributo del id que se guarda el indexdb
-            botonBorrar.innerText ='Borrar'
-            imagen.src = imagenURL;
-            imagen.alt = 'Portada de pelicula ' ;
-    
-            peliculaItem.appendChild(imagen);
-            peliculaDiv.appendChild(peliculaItem);
-            cuadroBton.appendChild(botonBorrar);
-            peliculaItem.appendChild(cuadroBton);
-
-             
-
-            function botonBorrarTodo(favoritos) {
-              db.remove(favoritos);
-            }
-            
-            
-//----------------------------------------------------------------------------------------------------------------------------
-            
-          
-            botonBorrar.addEventListener('click', botonBorrarTodo);
-            
-                    });
-                  })
-                  .catch(error => console.error(error));
-              });
-  //--------------------------------------------------------------------------------------------------------------------
-
             
 
