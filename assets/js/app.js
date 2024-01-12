@@ -1,17 +1,14 @@
-const peliculaDiv = document.getElementById('pelicula');
+const peliculaDiv = document.getElementById('.pelicula');
 const btnMostrar = document.querySelector('.btn_mostrar');
 const btnFav = document.querySelector('.btn_favoritos');
 const listaFav = document.querySelector('.listFav');
 const listaul = document.querySelector('.listaul');
-const modal = document.querySelector('.ventana_modal');
+const modal = document.querySelector('.ventana_modal');zzzz
 
 
 
-const db = new PouchDB('favoritos'); // Se crea la base de indexDB
+const db = new PouchDB('favoritos'); 
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
- //Se carga el service worker
  if( navigator.serviceWorker){
     
   navigator.serviceWorker.register('sw.js');
@@ -20,10 +17,6 @@ const db = new PouchDB('favoritos'); // Se crea la base de indexDB
       document.querySelector('main').innerHTML = '<h2> El navegador no ServiceWorker </h2>';
   };
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Cargo la API de la página y la guardo en obtenerPeliculas
 function obtenerPeliculas(){
   const options = {
     method: 'GET',
@@ -42,9 +35,7 @@ function obtenerPeliculas(){
     });
 }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Aca muestro las peliculas
 
   btnMostrar.addEventListener('click', async () => {
   const peliculas = await obtenerPeliculas();
@@ -53,7 +44,7 @@ function obtenerPeliculas(){
 
   peliculas.forEach(pelicula => {
 
-    //Toma de datos de la api y recorro y cargo en las variables
+
 
     const nombre = pelicula.title;
     const año = pelicula.release_date.slice(0, 4);
@@ -61,23 +52,20 @@ function obtenerPeliculas(){
     const detalles = pelicula.overview;
     const idImagen = pelicula.poster_path;
 
-    // cro el div de cada pelicula
     const peliculaItem = document.createElement('div');
     peliculaItem.classList.add('cuadro_pelicula');
 
-    // Se muestra portada como lista de peliculas
     const imagen = document.createElement('img');
     imagen.setAttribute('data_titulo', nombre);
     imagen.src = imagenURL;
     imagen.alt = 'Portada de ' + nombre;
 
-                // Se le da función de click a la imagen para que abra más detalles
                 imagen.addEventListener('click', function () {               
 
                   const imagenModal = document.getElementById('imagen_ventanaModal');
                   imagenModal.src = imagenURL;
                   imagenModal.alt = 'Portada de ' + nombre;
-                  //guardo el id de la imagen
+                 
                   iconoFav.id = idImagen;
                   
                   const titulo = document.getElementById('titulo_ventanaModal');
@@ -87,11 +75,8 @@ function obtenerPeliculas(){
                   const añoPelicula = document.getElementById('año_ventanaModal');
                   añoPelicula.textContent = 'Año: ' + año;
 
-                  
-                  // Se cambia el display para que aparezca como modal
                   modal.style.display = 'block';
 
-                  // Funcion de cerrar la ventana modal cambiando el display a none
                   const cerrar = document.querySelector('.close');
                   cerrar.addEventListener('click', function () {
                     modal.style.display = 'none';
@@ -113,11 +98,6 @@ function obtenerPeliculas(){
 });
 
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Funcion mostrar desde el buscador
-// carga de elementos a tomar
 
 const inputBuscar = document.getElementById('inputBuscar');
 const btnBuscar = document.getElementById('btnBuscar');
@@ -129,11 +109,8 @@ const btnBuscar = document.getElementById('btnBuscar');
   const busqueda = inputBuscar.value.trim().toLowerCase();
 
   if (busqueda === '') {
-    // Si no se ingresa ningún valor, no se realiza la búsqueda y se muestran todas las peliculas
     return;
   }
-
-  // Recorro la Api con el valor que se ingreso en busqueda
 
   const options = {
     method: 'GET',
@@ -147,9 +124,6 @@ const btnBuscar = document.getElementById('btnBuscar');
     .then(response => response.json())
     .then(data => {
 
-
-      // en data genero lo mismo que al mostar pero solo de las que se buscaron 
-
       const peliculas = data.results;
       peliculaDiv.innerHTML = '';
 
@@ -161,9 +135,6 @@ const btnBuscar = document.getElementById('btnBuscar');
         const imagenURL = 'https://image.tmdb.org/t/p/w500' + pelicula.poster_path;
         const detalles = pelicula.overview;
         const idImagen = pelicula.poster_path;
-        
-
-        // Crea los elementos HTML para mostrar la película
 
         const peliculaItem = document.createElement('div');
         peliculaItem.classList.add('cuadro_pelicula');
@@ -173,15 +144,12 @@ const btnBuscar = document.getElementById('btnBuscar');
         imagen.src = imagenURL;
         imagen.alt = 'Portada de ' + nombre;
 
-
-          // Se le da función de click a la imagen para que abra más detalles
-
                         imagen.addEventListener('click', function () {                          
 
                           const imagenModal = document.getElementById('imagen_ventanaModal');
                           imagenModal.src = imagenURL;
                           imagenModal.alt = 'Portada de ' + nombre;
-                          //aca guardo el id de la imagen
+                     
                           iconoFav.id = idImagen;
                           
                           const titulo = document.getElementById('titulo_ventanaModal');
@@ -191,11 +159,7 @@ const btnBuscar = document.getElementById('btnBuscar');
                           const añoPelicula = document.getElementById('año_ventanaModal');
                           añoPelicula.textContent = 'Año: ' + año;
 
-                          // Se cambia el display para que aparezca como modal
-
                           modal.style.display = 'block';
-
-                          // Funcion de cerrar la ventana modal cambiando el display a none
 
                           const cerrar = document.querySelector('.close');
                           cerrar.addEventListener('click', function () {
@@ -215,7 +179,6 @@ const btnBuscar = document.getElementById('btnBuscar');
         const descripcion = document.createElement('p');
         descripcion.textContent = detalles;
 
-        // Agrega los elementos al contenedor adecuado (peliculaDiv)
         peliculaItem.appendChild(imagen);
         
         peliculaDiv.appendChild(peliculaItem);
