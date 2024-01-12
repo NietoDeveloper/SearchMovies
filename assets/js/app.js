@@ -3,7 +3,7 @@ const btnMostrar = document.querySelector('.btn_mostrar');
 const btnFav = document.querySelector('.btn_favoritos');
 const listaFav = document.querySelector('.listFav');
 const listaul = document.querySelector('.listaul');
-const modal = document.querySelector('.ventana_modal');zzzz
+const modal = document.querySelector('.ventana_modal');
 
 
 
