@@ -4,8 +4,6 @@
   --body-font: 'Exo', sans-serif;
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
