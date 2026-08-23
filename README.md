@@ -219,12 +219,3 @@ SearchMovies/
 ```mermaid
 flowchart LR
     A([👤 User]) -->|Types Title| B[Search Input]
-    B -->|Submit| C[Fetch Request]
-    C -->|Query| D([🎬 Movies API])
-    D -->|Results| E[Render Movie Cards]
-    E --> F([📋 Search Results])
-
-    style A fill:#FFD700,color:#000,stroke:#FFD700
-    style C fill:#F7DF1E,color:#000,stroke:#F7DF1E
-    style F fill:#000,color:#FFD700,stroke:#FFD700
-```
