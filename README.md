@@ -277,7 +277,3 @@ git clone https://github.com/NietoDeveloper/SearchMovies
 
 ## 🤝 Contributing
 
-1. Fork the repository.
-2. Create3. Commit changes (`git commit -m 'Add feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
