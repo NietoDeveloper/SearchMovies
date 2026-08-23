@@ -214,8 +214,3 @@ SearchMovies/
 
 ---
 
-## 🔄 Search Flow
-
-```mermaid
-flowchart LR
-    A([👤 User]) -->|Types Title| B[Search Input]
