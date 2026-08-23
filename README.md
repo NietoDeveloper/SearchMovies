@@ -180,10 +180,3 @@ This project is licensed under the **MIT License**.
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://nietodeveloper.github.io/SearchMovies/">
-    <img src="https://img.shields.io/badge/🌐_Live_Site-nietodeveloper.github.io-FFD700?style=for-the-badge"/>
-  </a>
