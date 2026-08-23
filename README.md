@@ -200,9 +200,3 @@ This project is licensed under the **MIT License**.
 
 **Search Movies** is a movie search web application built with vanilla JavaScript, created as a study/demo project. A simple, lightweight website built with **vanilla JavaScript**, **CSS**, and **HTML** — no frameworks or dependencies required.
 
----
-
-## 🗂️ Project Structure
-
-```text
-SearchMovies/
