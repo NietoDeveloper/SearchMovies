@@ -228,10 +228,3 @@ flowchart LR
     style C fill:#F7DF1E,color:#000,stroke:#F7DF1E
     style F fill:#000,color:#FFD700,stroke:#FFD700
 ```
-
----
-
-## 🛠️ Technologies Used
-
-<div align="center">
-
