@@ -206,11 +206,3 @@ This project is licensed under the **MIT License**.
 
 ```text
 SearchMovies/
-└── assets/
-    ├── css/          # Stylesheets
-    ├── img/            # Image assets
-    └── js/               # JavaScript logic
-```
-
----
-
