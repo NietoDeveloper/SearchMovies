@@ -242,13 +242,4 @@ flowchart LR
 
 </div>
 
----
 
-## ✨ Features
-
-- **Movie Search:** Look up movies by title.
-- **Responsive Design:** Adapts cleanly across devices.
-- **Interactive UI:** Powered entirely by vanilla JS.
-- **Clean, Modular CSS Styling:** Organized under `assets/css`.
-
----
