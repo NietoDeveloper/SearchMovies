@@ -286,9 +286,3 @@ git clone https://github.com/NietoDeveloper/SearchMovies
 ---
 
 ## 👨‍💻 Author
-
-**Manuel Nieto (NietoDeveloper)**
-
----
-
-## 📄 License
