@@ -235,11 +235,3 @@ flowchart LR
 
 <div align="center">
 
-| Layer | Technologies |
-|:------|:-------------|
-| 🎨 **Frontend** | HTML, CSS, JavaScript |
-| ☁️ **Hosting** | GitHub Pages |
-
-</div>
-
-
