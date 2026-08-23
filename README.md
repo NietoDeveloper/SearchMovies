@@ -252,11 +252,3 @@ flowchart LR
 - **Clean, Modular CSS Styling:** Organized under `assets/css`.
 
 ---
-
-## 🚀 Setup Instructions
-
-To set up the project locally, follow these steps:
-
-**Step 1 — Clone the repository**
-
-```bash
