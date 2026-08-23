@@ -260,11 +260,3 @@ To set up the project locally, follow these steps:
 **Step 1 — Clone the repository**
 
 ```bash
-git clone https://github.com/NietoDeveloper/SearchMovies
-```
-
-**Step 2 — Open `index.html`** in a web browser.
-
----
-
-## 📖 Usage
