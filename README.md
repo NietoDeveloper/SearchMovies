@@ -167,10 +167,4 @@ This project is licensed under the **MIT License**.
 
 <p align="center">
   <a href="https://github.com/NietoDeveloper">
-    <img src="https://img.shields.io/badge/Engineer-Manuel%20Nieto-blue?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="https://committers.top/colombia#NietoDeveloper">
-    <img src="https://img.shields.io/badge/Committers.top-%231%20Colombia-gold?style=for-the-badge"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-    <img src="https://img.shields.io/badge/Vanilla-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000"/>
+    <img src="https://img.shields.io/badge/
