@@ -268,7 +268,3 @@ git clone https://github.com/NietoDeveloper/SearchMovies
 ---
 
 ## 📖 Usage
-
-- Navigate through the website using the browser.
-- All functionality is handled by vanilla JS scripts in the `assets/js/` folder.
-- Styles are located in the `assets/css/` folder.
