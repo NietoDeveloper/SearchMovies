@@ -161,10 +161,4 @@ This project is licensed under the **MIT License**.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=SEARCH%20MOVIES&fontSize=60&fontColor=FFD700&fontAlignY=42&desc=🎬%20Vanilla%20JS%20Movie%20Search%20App%20%C2%B7%20API-Powered%20Demo&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&duration=2800&pause=900&color=FFD700&center=true&vCenter=true&width=760&lines=%F0%9F%8E%9E%EF%B8%8F+Search+Movies+by+Title;%E2%9A%A1+Pure+HTML%2C+CSS+%26+JavaScript;%F0%9F%93%B1+Responsive%2C+Lightweight+Design;%F0%9F%8F%86+%231+GitHub+Committer+in+Colombia)](https://git.io/typing-svg)
-
-<br/>
-
-<p align="center">
-  <a href="https://github.com/NietoDeveloper">
-    <img src="https://img.shields.io/badge/
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech
