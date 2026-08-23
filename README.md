@@ -159,6 +159,3 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=SEARCH%20MOVIES&fontSize=60&fontColor=FFD700&fontAlignY=42&desc=🎬%20Vanilla%20JS%20Movie%20Search%20App%20%C2%B7%20API-Powered%20Demo&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech
