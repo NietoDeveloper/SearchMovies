@@ -187,11 +187,3 @@ This project is licensed under the **MIT License**.
   <a href="https://nietodeveloper.github.io/SearchMovies/">
     <img src="https://img.shields.io/badge/🌐_Live_Site-nietodeveloper.github.io-FFD700?style=for-the-badge"/>
   </a>
-  <a href="https://github.com/NietoDeveloper/SearchMovies">
-    <img src="https://img.shields.io/badge/📂_Source-NietoDeveloper%2FSearchMovies-000000?style=for-the-badge&logo=github&logoColor=FFD700"/>
-  </a>
-</p>
-
-</div>
-
----
